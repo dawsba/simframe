@@ -1,0 +1,21 @@
+services:
+  db:
+    name: db
+    class: Engine\Services\Database\Pdo
+    dependencies:
+      - this:log
+      - this:getConfig:getConfigKey::db
+    initialize: false
+  twig:
+    name: twig
+    class: Engine\Services\Twig\Twig
+    dependencies:
+      - this:log
+      - this:getConfig:getConfigKey::template
+    initialize: false
+  event:
+    name: event
+    class: Engine\Services\Events\Events
+    dependencies:
+      - this:log
+    initialize: false

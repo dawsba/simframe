@@ -1,0 +1,28 @@
+config:
+  isDev: true
+  dev:
+    db:
+      driver: pdo_mysql
+      user: root
+      password: alpha161
+      dbname: testbed
+      host: mysql
+    log:
+      name: log
+      path: Src/Engine/Logs/log.log
+      level: INFO
+    twig:
+      templatePath: ./Src/View/Templates
+  production:
+    db:
+      driver: pdo_mysql
+      user: root
+      password: alpha161
+      dbname: testbed
+      host: mysql
+    log:
+      name: log
+      path: Src/Engine/Logs/log.log
+      level: ERROR
+    twig:
+      templatePath: ./Src/View/Templates

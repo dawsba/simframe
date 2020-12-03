@@ -1,0 +1,9 @@
+{
+    "require": {
+        "doctrine/orm": "^2.7",
+        "symfony/yaml": "^5.1",
+        "monolog/monolog": "^2.1",
+        "twig/twig": "^3.1",
+        "doctrine/event-manager": "^1.1"
+    }
+}

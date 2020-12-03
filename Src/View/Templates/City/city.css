@@ -1,0 +1,51 @@
+.city_container {
+    float: left;
+    margin-bottom: 32px;
+}
+.city {
+    /*width:1600px;*/
+    margin-right:32px;
+}
+.hex {
+    float: left;
+    margin-right: -13px;
+    margin-bottom: -25px;
+}
+.hex .left {
+    float: left;
+    width: 0;
+    border-right: 15px solid #6C6;
+    border-top: 26px solid transparent;
+    border-bottom: 26px solid transparent;
+}
+.hex .middle {
+    float: left;
+    width: 30px;
+    height: 52px;
+    background: #6C6;
+}
+.hex .right {
+    float: left;
+    width: 0;
+    border-left: 15px solid #6C6;
+    border-top: 26px solid transparent;
+    border-bottom: 26px solid transparent;
+}
+.hex-row {
+    clear: left;
+}
+.hex.even {
+    margin-top: 26px;
+}
+
+.hex:hover .left{
+    border-right-color: chocolate;
+}
+
+.hex:hover .middle{
+    background: chocolate;
+}
+
+.hex:hover .right{
+    border-left-color: chocolate;
+}

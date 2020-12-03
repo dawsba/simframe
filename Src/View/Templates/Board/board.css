@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    min-width: 25%;
+    max-width: 74%;
+    max-height: 500px;
+    min-height: 100px;
+    margin-bottom: 2%;
+    border: 1px solid #000;
+    overflow: auto;
+}
+
+.item:nth-child(3n) {
+    width: 100%;
+    max-width: initial;
+}
